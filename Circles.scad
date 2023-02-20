@@ -2,6 +2,7 @@ $fn = 64;
 
 module HallowCircle(radius, xyThickness)
 {
+    color(rands(0, 1, 3))
     difference()
     {
         circle(radius);
@@ -17,7 +18,7 @@ module Circles(
     xyThickness = 1,
     zThickness = 1)
 {
-    linear_extrude(zThickness)
+    //linear_extrude(zThickness)
     for (idx = [0 : 1 : numberCircles - 1])
     {
         pos = rands(minPos, maxPos, 2);
